@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04BAD554-E9C6-4243-9F4F-5E09D7521A08}|ClientReadOnly\\ClientReadOnly.csproj|e:\\other\\coding\\projekti2 rrjeta\\projekti\\clientreadonly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04BAD554-E9C6-4243-9F4F-5E09D7521A08}|ClientReadOnly\\ClientReadOnly.csproj|solutionrelative:clientreadonly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD5A5445-2CF4-4311-A54F-B6267DF85D68}|ClientAdmin\\ClientAdmin.csproj|e:\\other\\coding\\projekti2 rrjeta\\projekti\\clientadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD5A5445-2CF4-4311-A54F-B6267DF85D68}|ClientAdmin\\ClientAdmin.csproj|solutionrelative:clientadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DE77E05-63B7-46A7-8491-72EE31D57FA2}|Serveri\\Serveri.csproj|e:\\other\\coding\\projekti2 rrjeta\\projekti\\serveri\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DE77E05-63B7-46A7-8491-72EE31D57FA2}|Serveri\\Serveri.csproj|solutionrelative:serveri\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD5A5445-2CF4-4311-A54F-B6267DF85D68}|ClientAdmin\\ClientAdmin.csproj|e:\\other\\coding\\projekti2 rrjeta\\projekti\\clientadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD5A5445-2CF4-4311-A54F-B6267DF85D68}|ClientAdmin\\ClientAdmin.csproj|solutionrelative:clientadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,26 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\ClientReadOnly\\Program.cs",
-              "RelativeDocumentMoniker": "ClientReadOnly\\Program.cs",
-              "ToolTip": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\ClientReadOnly\\Program.cs",
-              "RelativeToolTip": "ClientReadOnly\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:58:20.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
               "DocumentMoniker": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\ClientAdmin\\Program.cs",
               "RelativeDocumentMoniker": "ClientAdmin\\Program.cs",
               "ToolTip": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\ClientAdmin\\Program.cs",
               "RelativeToolTip": "ClientAdmin\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowH0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T17:57:44.391Z",
+              "WhenOpened": "2026-04-18T21:37:31.208Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +41,7 @@
               "RelativeDocumentMoniker": "Serveri\\Program.cs",
               "ToolTip": "E:\\Other\\Coding\\Projekti2 Rrjeta\\Projekti\\Serveri\\Program.cs",
               "RelativeToolTip": "Serveri\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowKwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T22:16:00.976Z",
               "EditorCaption": ""
