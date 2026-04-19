@@ -11,7 +11,7 @@ Console.Title = "UDP CLIENT - ADMIN (FULL ACCESS)";
 Console.Clear();
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("==================================================");
-Console.WriteLine("    SISTEMI I KONTROLLIT - ADMIN (PERSONI 2)    ");
+Console.WriteLine("    SISTEMI I KONTROLLIT - ADMIN  ");
 Console.WriteLine("==================================================");
 Console.ResetColor();
 
@@ -23,10 +23,12 @@ try
     while (true) 
     {
         Console.WriteLine("\n--- MENYJA E KOMANDAVE ---");
-        Console.WriteLine("[1] READ    - Listo skedarët në server");
-        Console.WriteLine("[2] WRITE   - Shkruaj një mesazh/skedar të ri");
-        Console.WriteLine("[3] EXECUTE - Ekzekuto një proces në server");
-        Console.WriteLine("[4] PING    - Testo lidhjen");
+        Console.WriteLine("[1] LIST   - Shfaq file");
+        Console.WriteLine("[2] READ   - Lexo file");
+        Console.WriteLine("[3] NEW    - Krijo file");
+        Console.WriteLine("[4] APPEND - Shkruaj ne file ekzistues");
+        Console.WriteLine("[5] MESSAGE - Dergo nje mesazh tek serveri");
+        Console.WriteLine("[6] PING    - Testo lidhjen");
         Console.WriteLine("[exit]      - Mbyll klientin");
         
         Console.Write("\nZgjidhni një opsion: ");
@@ -39,25 +41,51 @@ try
 
        
         
-        switch (zgjedhja)
+         switch (zgjedhja)
         {
             case "1":
-                kërkesa = "admin:read";
+                kërkesa = "admin:list";
                 break;
+
             case "2":
-                Console.Write("Shkruaj tekstin që dëshiron të ruash në server: ");
-                string? teksti = Console.ReadLine();
-                kërkesa = "admin:write:" + teksti;
+                Console.Write("Emri i file: ");
+                string fileRead = Console.ReadLine();
+                kërkesa = $"admin:read:{fileRead}";
                 break;
+
             case "3":
-                kërkesa = "admin:execute";
+                Console.Write("Emri i file: ");
+                string fileNew = Console.ReadLine();
+
+                Console.Write("Teksti: ");
+                string textNew = Console.ReadLine();
+
+                kërkesa = $"admin:write:new:{fileNew}:{textNew}";
                 break;
+
             case "4":
+                Console.Write("Emri i file: ");
+                string fileAppend = Console.ReadLine();
+
+                Console.Write("Teksti: ");
+                string textAppend = Console.ReadLine();
+
+                kërkesa = $"admin:write:append:{fileAppend}:{textAppend}";
+                break;
+
+            case "5":
+                Console.Write("Mesazhi: ");
+                string message = Console.ReadLine();
+
+                kërkesa = $"admin:message:{message}";
+                break;
+
+            case "6":
                 kërkesa = "admin:ping";
                 break;
-            default:
-               
-                kërkesa = "admin:" + zgjedhja;
+
+            default: 
+                kërkesa = "admin:" + zgjedhja; 
                 break;
         }
 
@@ -85,7 +113,7 @@ try
 catch (SocketException ex)
 {
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("\n[GABIM] Serveri nuk po përgjigjet! Sigurohu që Personi 1 e ka ndezur serverin.");
+    Console.WriteLine("\n[GABIM] Serveri nuk po përgjigjet! Sigurohu që serveri eshte i ndezur.");
     Console.ResetColor();
 }
 catch (Exception ex) 
