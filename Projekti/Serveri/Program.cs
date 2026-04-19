@@ -151,6 +151,10 @@ class Serveri
                             response = File.ReadAllText(readPath);
                             break;
 
+                        case "ping":
+                            response = "PONG";
+                            break;
+
                         default:
                             response = "NUK KE AKSES!";
                             break;
